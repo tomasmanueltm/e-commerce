@@ -2,8 +2,8 @@
     font-family: "Poppins"
     src: url("../font/Poppins.ttf")
 @font-face 
-    font-family: "Raleway"
-    src: url("../font/Raleway.ttf")
+    font-family: "Linotte"
+    src: url("../font/Linotte.otf")
 
 
 // configuracao padrao
@@ -13,7 +13,7 @@
     list-style: none
     font-weight: 600
     word-break: keep-all
-    font-family: Raleway
+    font-family: Linotte
     text-decoration: none
     box-sizing: border-box
     scroll-behavior: smooth
@@ -47,7 +47,16 @@ body
 
 
 // Regras e Funções
+@mixin padrao($p: 4em, $w: 100%)
+    width: $w
+    padding: $p 
 
+@mixin flex($align: normal, $justify: space-between, $direction: row, $gap: null)
+    display: flex
+    align-items: $align 
+    justify-content: $justify
+    flex-direction: $direction
+    gap: $gap
 
 
 

@@ -1,0 +1,133 @@
+@import "../icon/icons.css";
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins.ttf");
+}
+@font-face {
+  font-family: "Linotte";
+  src: url("../font/Linotte.otf");
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-weight: 600;
+  word-break: keep-all;
+  font-family: Linotte;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  --corA: #ff7d1b;
+  --colorB: #fa4a4d;
+  --colorC: #1a1b1e;
+  overflow-x: hidden;
+}
+
+::scrollbar {
+  width: 0px !important;
+}
+
+*::scrollbar {
+  width: 0px !important;
+}
+
+*::-webkit-scrollbar {
+  width: 0px !important;
+}
+
+*::-moz-scrollbar {
+  width: 0px !important;
+}
+
+*::-ms-scrollbar {
+  width: 0px !important;
+}
+
+*::-moz-osx-scrollbar {
+  width: 0px !important;
+}
+
+*::-o-scrollbar {
+  width: 0px !important;
+}
+
+body {
+  padding: 0 4.5em;
+}
+
+header {
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  padding: 3rem 0 2rem;
+}
+header .left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 4rem;
+}
+header .left h1 {
+  font-size: max(1fr, 2vw);
+  font-family: Poppins !important;
+}
+header .left ul li {
+  margin: 0 1rem;
+  display: inline-block;
+}
+header .left ul li a {
+  color: #666;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+header .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+header .right .icons {
+  padding-right: 1rem;
+}
+header .right .icons a {
+  color: #666;
+  margin: 0 0.8rem;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+header .right img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+section {
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  padding: 3rem 0;
+  border-top: 1px solid rgba(204, 204, 204, 0.8);
+}
+section .left {
+  width: 700px;
+  height: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+section .left .img {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */
