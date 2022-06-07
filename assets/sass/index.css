@@ -71,10 +71,10 @@ header .left {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  gap: 4rem;
+  gap: 2rem;
 }
 header .left h1 {
-  font-size: max(1fr, 2vw);
+  font-size: max(0.5fr, 2vw);
   font-family: Poppins !important;
 }
 header .left ul li {
@@ -116,18 +116,42 @@ section {
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
-  padding: 3rem 0;
+  padding: 4rem 0;
   border-top: 1px solid rgba(204, 204, 204, 0.8);
+  gap: 3rem;
 }
 section .left {
-  width: 700px;
-  height: 300px;
+  width: 600px;
   border-radius: 5px;
-  border: 1px solid #ccc;
 }
 section .left .img {
   width: 100%;
+  height: 330px;
+  overflow: hidden;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+section .left .img img {
   height: 100%;
+  width: inherit;
+  object-fit: cover;
+}
+section .left .lista {
+  float: left;
+  width: inherit;
+  margin: 1rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+section .left .lista li {
+  height: 60px;
+  overflow: hidden;
+  border-radius: 3px;
+  border: 1px solid #999;
+}
+section .right {
+  width: 400px;
 }
 
 /*# sourceMappingURL=index.css.map */
