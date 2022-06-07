@@ -1,7 +1,7 @@
 @import "../icon/icons.css";
 @font-face {
-  font-family: "Poppins";
-  src: url("../font/Poppins.ttf");
+  font-family: "Roboto";
+  src: url("../font/Roboto.ttf");
 }
 @font-face {
   font-family: "Linotte";
@@ -20,7 +20,7 @@
 }
 
 body {
-  --corA: #ff7d1b;
+  --l: #ff7d1b;
   --colorB: #fa4a4d;
   --colorC: #1a1b1e;
   overflow-x: hidden;
@@ -75,7 +75,7 @@ header .left {
 }
 header .left h1 {
   font-size: max(0.5fr, 2vw);
-  font-family: Poppins !important;
+  font-family: Roboto !important;
 }
 header .left ul li {
   margin: 0 1rem;
@@ -111,14 +111,14 @@ header .right img {
 }
 
 section {
-  display: flex;
-  align-items: normal;
-  justify-content: space-between;
-  flex-direction: row;
   width: 100%;
   padding: 4rem 0;
+  display: flex;
+  align-items: normal;
+  justify-content: flex-start;
+  flex-direction: row;
   border-top: 1px solid rgba(204, 204, 204, 0.8);
-  gap: 3rem;
+  gap: 4rem;
 }
 section .left {
   width: 600px;
@@ -129,7 +129,7 @@ section .left .img {
   height: 330px;
   overflow: hidden;
   border-radius: 3px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--l);
 }
 section .left .img img {
   height: 100%;
@@ -145,13 +145,108 @@ section .left .lista {
   grid-gap: 2rem;
 }
 section .left .lista li {
-  height: 60px;
+  height: 80px;
   overflow: hidden;
   border-radius: 3px;
-  border: 1px solid #999;
+  border: 1px solid var(--l);
 }
 section .right {
-  width: 400px;
+  width: inherit;
+  padding: 0.2em 2rem;
+}
+section .right .descricao {
+  width: inherit;
+}
+section .right .descricao span {
+  font-size: 1.1em;
+  font-weight: 900;
+  line-height: 2em;
+  color: var(--l);
+  font-family: Roboto;
+}
+section .right .descricao h1 {
+  font-size: 2.3em;
+  font-family: Roboto;
+  letter-spacing: 3px;
+  padding: 0 1.8rem 0 0;
+}
+section .right .descricao p {
+  padding: 1rem 0;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+section .right .valores {
+  width: inherit;
+  display: block;
+}
+section .right .valores .preco {
+  float: left;
+}
+section .right .valores .preco div {
+  float: left;
+  padding: 0 0 0.5em;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: row;
+}
+section .right .valores .preco div h2 {
+  font-size: 2.3em;
+  font-weight: 900;
+  font-family: Roboto;
+}
+section .right .valores .preco div span {
+  font-size: 1em;
+  padding: 0 0 0 2rem;
+  color: var(--l);
+  font-family: Roboto;
+}
+section .right .valores .preco p {
+  color: #999;
+  display: block;
+  font-size: 1.2em;
+  font-weight: 900;
+  text-decoration: line-through;
+}
+section .right .valores .form {
+  width: 100%;
+  clear: both;
+  padding: 1rem 0 0;
+  display: flex;
+  align-items: normal;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 2rem;
+}
+section .right .valores .form .inputs {
+  width: 120px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+section .right .valores .form .inputs i {
+  z-index: 1;
+  color: var(--l);
+  cursor: pointer;
+  font-size: 1.3em;
+  font-weight: 900;
+  font-style: normal;
+  font-family: Roboto;
+}
+section .right .valores .form .inputs span {
+  z-index: 0;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+section .right .valores .form .button {
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  background: var(--l);
 }
 
 /*# sourceMappingURL=index.css.map */
