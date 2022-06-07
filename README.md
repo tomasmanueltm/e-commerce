@@ -2,7 +2,7 @@ Saudações, a todos!
 
 
 
-Ontem postei o link de uma live que nela mostrei a construção do website que esta na ilustração partindo do zero e usando Sass e Html.
+Em uma live mostrei a construção do website que esta na ilustração partindo do zero e usando Sass e Html.
 
 
 
