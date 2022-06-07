@@ -1,0 +1,73 @@
+@font-face 
+    font-family: "Poppins"
+    src: url("../font/Poppins.ttf")
+@font-face 
+    font-family: "Raleway"
+    src: url("../font/Raleway.ttf")
+
+
+// configuracao padrao
+*
+    margin: 0px
+    padding: 0px
+    list-style: none
+    font-weight: 600
+    word-break: keep-all
+    font-family: Raleway
+    text-decoration: none
+    box-sizing: border-box
+    scroll-behavior: smooth
+
+
+// configuracao padrao
+body
+    --corA: #ff7d1b
+    --colorB: #fa4a4d
+    --colorC: #1a1b1e
+    overflow-x: hidden	
+	
+
+
+// retirar a linha do scroll
+::scrollbar  
+    width: 0px!important
+*::scrollbar  
+    width: 0px!important
+*::-webkit-scrollbar 
+    width: 0px!important
+*::-moz-scrollbar 
+    width: 0px!important
+*::-ms-scrollbar 
+    width: 0px!important
+*::-moz-osx-scrollbar
+    width: 0px!important
+*::-o-scrollbar
+    width: 0px!important
+
+
+
+// Regras e Funções
+
+
+
+
+    
+// Query
+@mixin desk
+    @media ( max-width:  992px)
+        @content
+@mixin table
+    @media ( max-width:  768px)
+        @content
+@mixin mobile-desk
+    @media ( max-width:  600px)
+        @content
+@mixin mobile-desk
+    @media ( max-width:  425px)
+        @content
+@mixin mobile-normal
+    @media ( max-width:  375px)
+        @content
+@mixin mobile-init
+    @media ( max-width:  320px)
+        @content
